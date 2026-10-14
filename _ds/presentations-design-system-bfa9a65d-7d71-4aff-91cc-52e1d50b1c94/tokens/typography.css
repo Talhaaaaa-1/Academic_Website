@@ -1,0 +1,50 @@
+/* Research Systems — typography. Display: Space Grotesk · UI/body: Inter · Technical labels: IBM Plex Mono. */
+:root{
+--font-display:"Space Grotesk","Inter",ui-sans-serif,system-ui,sans-serif;
+--font-sans:"Inter",Arial,ui-sans-serif,system-ui,sans-serif;
+--font-mono:"IBM Plex Mono",Arial,ui-sans-serif,system-ui,monospace;
+--weight-regular:400;--weight-medium:500;
+
+/* Role scale — size / leading / tracking (exact from DESIGN.md) */
+--type-hero-size:96px;--type-hero-leading:1;--type-hero-tracking:-1.92px;
+--type-product-size:72px;--type-product-leading:1;--type-product-tracking:-1.44px;
+--type-section-display-size:60px;--type-section-display-leading:1;--type-section-display-tracking:-1.2px;
+--type-section-size:48px;--type-section-leading:1.2;--type-section-tracking:-0.48px;
+--type-card-size:32px;--type-card-leading:1.2;--type-card-tracking:-0.32px;
+--type-feature-size:24px;--type-feature-leading:1.3;--type-feature-tracking:0;
+--type-body-lg-size:18px;--type-body-lg-leading:1.4;
+--type-body-size:16px;--type-body-leading:1.5;
+--type-button-size:14px;--type-button-leading:1.71;
+--type-caption-size:14px;--type-caption-leading:1.4;
+--type-mono-size:14px;--type-mono-leading:1.4;--type-mono-tracking:0.28px;
+--type-micro-size:12px;--type-micro-leading:1.4;
+
+/* Font shorthands — use as `font: var(--type-body)` */
+--type-hero:400 96px/1 var(--font-display);
+--type-product:400 72px/1 var(--font-display);
+--type-section-display:400 60px/1 var(--font-sans);
+--type-section:400 48px/1.2 var(--font-sans);
+--type-card:400 32px/1.2 var(--font-sans);
+--type-feature:400 24px/1.3 var(--font-sans);
+--type-body-lg:400 18px/1.4 var(--font-sans);
+--type-body:400 16px/1.5 var(--font-sans);
+--type-button:500 14px/1.71 var(--font-sans);
+--type-caption:400 14px/1.4 var(--font-sans);
+--type-mono:400 14px/1.4 var(--font-mono);
+--type-micro:400 12px/1.4 var(--font-sans);
+}
+
+/* Role classes */
+.rs-hero-display{font:var(--type-hero);letter-spacing:var(--type-hero-tracking)}
+.rs-product-display{font:var(--type-product);letter-spacing:var(--type-product-tracking)}
+.rs-section-display{font:var(--type-section-display);letter-spacing:var(--type-section-display-tracking)}
+.rs-section-heading{font:var(--type-section);letter-spacing:var(--type-section-tracking)}
+.rs-card-heading{font:var(--type-card);letter-spacing:var(--type-card-tracking)}
+.rs-feature-heading{font:var(--type-feature)}
+.rs-body-lg{font:var(--type-body-lg)}
+.rs-body{font:var(--type-body)}
+.rs-button-text{font:var(--type-button)}
+.rs-caption{font:var(--type-caption)}
+.rs-mono-label{font:var(--type-mono);letter-spacing:var(--type-mono-tracking);text-transform:uppercase}
+.rs-micro{font:var(--type-micro)}
+.rs-num{font-variant-numeric:tabular-nums}

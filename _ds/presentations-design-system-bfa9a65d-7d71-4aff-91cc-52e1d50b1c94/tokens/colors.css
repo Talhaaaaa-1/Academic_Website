@@ -1,0 +1,61 @@
+/* Research Systems — color tokens. Base values from DESIGN.md; semantic aliases below. */
+:root{
+/* Brand anchors */
+--true-black:#000000;--primary:#17171c;--ink:#212121;--deep-green:#003c33;--dark-navy:#071829;
+/* Accents */
+--action-blue:#1863dc;--focus-blue:#4c6ee6;--coral:#ff7759;--coral-soft:#ffad9b;--coral-wash:#ffefec;--form-focus:#9b60aa;
+/* Surfaces */
+--canvas:#ffffff;--soft-stone:#eeece7;--pale-green:#edfce9;--pale-blue:#f1f5ff;
+/* Text & rules */
+--body-muted:#616161;--slate:#75758a;--muted:#93939f;--hairline:#d9d9dd;--border-light:#e5e7eb;--card-border:#f2f2f2;
+--on-primary:#ffffff;--on-dark:#ffffff;--error:#b30000;
+/* Media gradient stops — ONLY inside gradient media, never text/UI/borders */
+--media-rust:#8e4a40;--media-plum:#3a2b42;--media-periwinkle:#56609c;--media-mist:#d6d1c7;--media-cream:#dccbb4;--media-teal:#2f655c;--media-abyss:#0d1316;--media-peach:#e39c8b;
+
+/* ---- Semantic aliases ---- */
+--surface-page:var(--canvas);
+--surface-card:var(--canvas);
+--surface-warm:var(--soft-stone);
+--surface-wash-green:var(--pale-green);
+--surface-wash-blue:var(--pale-blue);
+--surface-inverse:var(--primary);
+--surface-band-green:var(--deep-green);
+--surface-band-navy:var(--dark-navy);
+--surface-announcement:var(--true-black);
+--surface-dark-raised:rgba(255,255,255,0.06);
+--surface-dark-raised-2:rgba(255,255,255,0.10);
+
+--text-strong:var(--true-black);
+--text-body:var(--ink);
+--text-secondary:var(--body-muted);
+--text-tertiary:var(--slate);
+--text-muted:var(--muted);
+--text-link:var(--action-blue);
+--text-accent:var(--coral);
+--text-error:var(--error);
+--text-on-dark:var(--on-dark);
+--text-on-dark-muted:var(--muted);
+--text-on-dark-secondary:rgba(255,255,255,0.72);
+
+--border-rule:var(--hairline);
+--border-subtle:var(--border-light);
+--border-card:var(--card-border);
+--border-strong:var(--primary);
+--border-input:var(--hairline);
+--border-input-focus:var(--form-focus);
+--border-on-dark:rgba(255,255,255,0.16);
+--border-on-dark-strong:rgba(255,255,255,0.32);
+
+--action-primary-bg:var(--primary);
+--action-primary-fg:var(--on-primary);
+--action-primary-bg-hover:var(--true-black);
+--action-inverse-bg:var(--canvas);
+--action-inverse-fg:var(--primary);
+--action-inverse-bg-hover:var(--soft-stone);
+--focus-ring:var(--focus-blue);
+
+--chip-coral-fg:var(--ink);
+--chip-coral-bg:var(--coral-wash);
+--chip-coral-border:var(--coral);
+--chip-coral-bg-active:var(--coral);
+}
