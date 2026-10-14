@@ -1,0 +1,19 @@
+/* Research Systems — data visualisation + status. Extension to DESIGN.md, derived in OKLCH from the core palette. */
+:root{
+/* Categorical series (≥3:1 on white) */
+--viz-1:#1863dc;--viz-2:#e05d3d;--viz-3:#247c66;--viz-4:#9b60aa;--viz-5:#a97d3a;--viz-6:#75758a;
+/* Sequential "thermal" ramp — cold/low → hot/high, monotonic lightness */
+--viz-seq-0:#071829;--viz-seq-1:#292f56;--viz-seq-2:#5a467d;--viz-seq-3:#a2568a;--viz-seq-4:#e26977;--viz-seq-5:#ff9176;--viz-seq-6:#ffd3bb;
+/* Diverging — below setpoint (blue) · neutral · above setpoint (coral) */
+--viz-div-1:#285cc2;--viz-div-2:#7398dc;--viz-div-3:#c1d2ef;--viz-div-4:#f2f0ea;--viz-div-5:#f5c9b9;--viz-div-6:#f5886c;--viz-div-7:#b94739;
+--viz-grid:var(--border-light);--viz-axis:var(--hairline);--viz-label:var(--body-muted);--viz-annotation:var(--ink);
+
+/* Status — light surfaces */
+--status-ok-bg:var(--pale-green);--status-ok-fg:var(--deep-green);--status-ok-dot:#25855b;
+--status-run-bg:var(--pale-blue);--status-run-fg:var(--action-blue);--status-run-dot:var(--action-blue);
+--status-warn-bg:var(--coral-wash);--status-warn-fg:#b94739;--status-warn-dot:var(--coral);
+--status-error-bg:#fcebeb;--status-error-fg:var(--error);--status-error-dot:var(--error);
+--status-idle-bg:var(--soft-stone);--status-idle-fg:var(--body-muted);--status-idle-dot:var(--muted);
+/* Status — dark surfaces (console, bands) */
+--status-ok-on-dark:#63d99b;--status-run-on-dark:#81aaf7;--status-warn-on-dark:var(--coral);--status-error-on-dark:#ef6661;--status-idle-on-dark:var(--muted);
+}
